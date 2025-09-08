@@ -22,13 +22,9 @@ body {
     color: #414042;
     background: #f9f9f9;
     box-sizing: border-box;
-
-    /* přidáno pro sticky footer */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-    /* tvé pozadí */
     background-image: url("obrazky/wallpaper.png");
     background-size: cover;
     background-position: center;
@@ -49,10 +45,8 @@ body>header {
 
 article {
     flex: 1;
-    /* vyplní volné místo mezi headerem a footerem */
     max-width: 960px;
     margin: 100px auto 0 auto;
-    /* 100px = výška headeru */
     padding: 50px 50px 10px 50px;
 }
 
@@ -102,15 +96,13 @@ article section a {
 
 :root {
     --logo-size: 100px;
-    /* velikost zlatého loga */
     --logo-gap: 2px;
-    /* mezera mezi logem a textem */
+    
 }
 
 #logo {
     height: var(--logo-size);
     padding-left: calc(var(--logo-size) + var(--logo-gap));
-    /* místo pro text */
     margin: auto 0 auto 0;
     display: flex;
     flex-direction: column;
@@ -293,8 +285,6 @@ html {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
     font-family: "Poppins";
-
-    /* důležité: udělat z formuláře flex kontejner */
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -325,8 +315,8 @@ html {
     align-self: flex-end;
     margin-top: 8px;
     font-family: popins;
-    font-weight: 700;   /* tučný text na tlačítku */
-    font-size: 1.05rem; /* o chlup větší */
+    font-weight: 700;   
+    font-size: 1.05rem; 
     letter-spacing: .5px;
 }
 
@@ -337,11 +327,12 @@ html {
 .form-input {
     display: flex;
     flex-direction: column;
-    gap: 8px;                   /* např. 6–10px */
+    gap: 8px;                 
 }
 
 .form-input label {
-    color: #6F8D64;     /* barva textu */
-    font-weight: 700;   /* tučně */
-    font-size: 1.1rem;  /* větší */
+    color: #6F8D64;    
+    font-weight: 700;  
+    font-size: 1.1rem; 
+
 }

@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Kontakt na programátorku Michaelu Jandurovou, programování na zakázku"/>
-    <meta name="keywords" content="kontakt, programátor, Michaela Jandurová, zakázka, programování"/>
-    <meta name="author" content="Michaela Jandurová"/>
+    <meta name="description" content="Kontakt na programátorku Michaelu Jandurovou, programování na zakázku" />
+    <meta name="keywords" content="kontakt, programátor, Michaela Jandurová, zakázka, programování" />
+    <meta name="author" content="Michaela Jandurová" />
     <link rel="stylesheet" href="styl.css" type="text/css" />
-    <link rel="shortcut icon" href="obrazky/ikona.ico"/>
+    <link rel="shortcut icon" href="obrazky/ikona.ico" />
     <title>Kontaktujte mě</title>
 </head>
 
@@ -30,7 +30,7 @@
     </header>
 
     <main>
-        <form class="contact-form" action="odeslani.php" method="post">
+        <form class="contact-form" action="https://formsubmit.co/michaela.jandurova@gmail.com" method="POST">
             <div class="form-input">
                 <label for="form_name">Jméno a příjmení</label>
                 <input type="text" id="form_name" name="name" placeholder="Jméno..." required />
@@ -46,8 +46,13 @@
                 <textarea id="form_message" name="message" placeholder="Zpráva..." rows="4" required></textarea>
             </div>
 
+            <!-- skryté nastavení -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tvoje-stranka.github.io/dekujeme.html">
+
             <button type="submit">Odeslat</button>
         </form>
     </main>
 </body>
+
 </html>
